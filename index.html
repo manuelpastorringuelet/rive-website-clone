@@ -4,10 +4,199 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Rive App</title>
   </head>
   <body>
-    <h1 class="text-4xl font-bold text-red-800">Hello World!</h1>
+    <!-- NAVIGATION -->
+    <header class="lg:justify-between lg:flex">
+      <nav
+        class="bg-gray-900 flex justify-between items-center p-4 gap-12 fixed min-w-full"
+      >
+        <img src="/assets/images/logo_header.svg" alt="logo_header" />
+
+        <div
+          class="font-sans font-medium opacity-50 text-white hidden lg:visible lg:flex gap-5"
+        >
+          <a href="#" class="flex gap-2"
+            >Products<img
+              src="/assets/images/vector_header.svg"
+              alt="vector_header"
+            />
+          </a>
+          <a href="#" class="flex gap-2"
+            >Community<img
+              src="/assets/images/vector_header.svg"
+              alt="vector_header"
+            />
+          </a>
+          <a href="#" class="flex gap-2">Pricing</a>
+          <a href="#" class="flex gap-2">
+            Learn
+            <img
+              src="/assets/images/vector_header.svg"
+              alt="vector_header"
+              class="w-full"
+            />
+          </a>
+          <a href="#" class="flex gap-2"
+            >Support<img
+              src="/assets/images/vector_header.svg"
+              alt="vector_header"
+            />
+          </a>
+          <a href="#" class="flex gap-2" class="hidden lg:visible">Downloads</a>
+        </div>
+
+        <div
+          class="font-sans font-medium opacity-50 text-white mr-4 content-center items-center rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 p-4 pl-6 pr-6 hidden ml-auto lg:block"
+        >
+          <a>Get Started</a>
+        </div>
+
+        <a href="javascript:void(0);" class="lg:hidden" onclick="myFunction()">
+          <svg
+            class="h-8 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- SECTION 1 -->
+      <section>
+        <!-- s 1a -->
+        <section>
+          <div class="flex">
+            <div>
+              <img
+                src="/assets/vectors/logo_s1a.svg"
+                alt="logo_s1a"
+                class="s1a_logo"
+              />
+            </div>
+            <div>
+              <h1 class="font2">
+                Build interactive animations that run anywhere
+              </h1>
+            </div>
+            <div class="s1a_h2">
+              <h2 class="font3">
+                Blazing fast. Tiny size.
+                <span class="font3-bis">Made for runtime.</span>
+              </h2>
+            </div>
+            <div>
+              <a href="#" class="s1a_button1" class="font7">Get Started</a>
+            </div>
+            <div>
+              <button class="s1a_button2" class="font8">
+                Lottie? Rive is 10x smaller and faster.
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- s 1b -->
+        <section class="s1b_section">
+          <div class="s1b_wrapper">
+            <a href="#" class="s1b_wrapper_a">
+              <figure class="s1b_figure">
+                <video
+                  autoplay
+                  loop
+                  src="https://cdn.rive.app/framer/ui_components.mp4"
+                  class="s1b_video"
+                ></video>
+                <figcaption class="s1b_figCaption">
+                  Build animated UI components that are ready to ship
+                </figcaption>
+              </figure>
+            </a>
+            <a href="#" class="s1b_wrapper_a">
+              <figure>
+                <video
+                  autoplay
+                  loop
+                  src="https://cdn.rive.app/framer/walking_machine.mp4"
+                  class="s1b_video"
+                ></video>
+                <figcaption class="s1b_figCaption">
+                  Animate characters for products, websites, and games
+                </figcaption>
+              </figure>
+            </a>
+            <a href="#" class="s1b_wrapper_a">
+              <figure>
+                <video
+                  autoplay
+                  loop
+                  src="https://cdn.rive.app/framer/notion.mp4"
+                  class="s1b_video"
+                ></video>
+                <figcaption class="s1b_figCaption">
+                  Bring brands to life with animated hero moments
+                </figcaption>
+              </figure>
+            </a>
+            <a href="#" class="s1b_wrapper_a">
+              <figure>
+                <video
+                  src="https://cdn.rive.app/framer/emoji.mp4"
+                  class="s1b_video"
+                  autoplay
+                  loop
+                ></video>
+                <figcaption class="s1b_figCaption">
+                  Convey emotions with animated icons, stickers, and emojis
+                </figcaption>
+              </figure>
+            </a>
+            <a href="#" class="s1b_wrapper_a">
+              <figure>
+                <video
+                  src="https://cdn.rive.app/framer/barchart.mp4"
+                  class="s1b_video"
+                  autoplay
+                  loop
+                ></video>
+                <figcaption class="s1b_figCaption">
+                  Create educational graphics and data visualizations
+                </figcaption>
+              </figure>
+            </a>
+
+            <div class="s1b_wrapper_wrapper">
+              <a href="#">
+                <button class="s1b_wrapper_wrapper_button">
+                  <div class="font9">
+                    Use Cases
+                    <img src="/assets/vectors/arrowRight.svg" alt="" />
+                  </div>
+                </button>
+              </a>
+              <a href="#">
+                <button class="s1b_wrapper_wrapper_button">
+                  <div class="font9">
+                    Features
+                    <img src="/assets/vectors/arrowRight.svg" alt="" />
+                  </div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
   </body>
   <script type="module" src="/src/main.ts"></script>
 </html>
