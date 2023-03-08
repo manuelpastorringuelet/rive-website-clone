@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     screens: {
       sm: "480px",
-      md: "768px",
+      md: "650px",
       lg: "950px",
       xl: "1440px",
     },
@@ -15,13 +15,22 @@ module.exports = {
     extend: {
       backgroundColor: {
         "neutral-850": "#1D1D1D",
+        "neutral-750": "#333333",
       },
       borderRadius: {
         "4xl": "2rem",
         "5xl": "3.25rem",
       },
       borderWidth: {
-        "1": "1px",
+        1: "1px",
+      },
+      aspectRatio: {
+        "4/3": "4 / 3",
+      },
+      colors: {
+        "neutral-950": "#0e0e0e",
+        "neutral-850": "#1D1D1D",
+        "neutral-750": "#333333",
       },
     },
   },
