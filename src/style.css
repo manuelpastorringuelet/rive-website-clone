@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
-
 @layer base {
   /* inter-regular - latin */
   @font-face {
