@@ -1,6 +1,6 @@
 import "./style.css";
 
-let x = document.getElementById("menu-container")!;
+const x = document.getElementById("menu-container")!;
 
 function myFunction() {
   if (x.style.display === "flex") {
