@@ -4,6 +4,29 @@ const menuContainer = document.getElementById(
   "menu-container"
 ) as HTMLDivElement;
 
-const x = document.getElementById("button-hidden-menu") as HTMLAnchorElement;
+const dropMenuButton = document.getElementById(
+  "drop-menu"
+) as HTMLAnchorElement;
 
-x.addEventListener("click", () => menuContainer.classList.toggle("hidden"));
+dropMenuButton.addEventListener("click", () => {
+  menuContainer.classList.toggle("hidden");
+
+  const icons = document.querySelectorAll("#drop-menu svg");
+
+  icons.forEach((icon) => {
+    icon.classList.toggle("hidden");
+  });
+});
+
+const subMenuContainer = document.getElementById(
+  "sub-menu-container"
+) as HTMLDivElement;
+
+const subMenuButton = document.getElementById(
+  "drop-submenu"
+) as HTMLAnchorElement;
+
+subMenuButton.addEventListener("click", () => {
+  subMenuContainer.classList.toggle("hidden");
+  subMenuButton.classList.toggle("text-white");
+});

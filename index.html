@@ -18,7 +18,7 @@
             ><img src="/assets/images/logo_header.svg" alt="logo_header"
           /></a>
 
-          <a class="lg:hidden" href="#" id="button-hidden-menu">
+          <a class="lg:hidden" href="#" id="drop-menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -33,6 +33,10 @@
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="h-8 text-white hidden">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            
           </a>
         </div>
 
@@ -40,13 +44,30 @@
           id="menu-container"
           class="font-sans flex-col gap-5 text-neutral-400 font-semibold flex hidden lg:flex lg:flex-row lg:justify-center lg:items-center"
         >
-          <a
-            href="#"
-            class="flex gap-1 hover:text-white border-t-1 border-neutral-700 pt-5 lg:py-0 lg:border-none bg-neutral-850"
-            >Products<img
-              src="/assets/images/vector_header.svg"
-              alt="vector_header"
-            />
+        <div class="border-t-1 border-neutral-700 pt-5 lg:py-0 lg:border-none bg-neutral-850">
+          <a id="drop-submenu"
+          href="#"
+          class="flex gap-1 hover:text-white w-fit"
+          >Products
+          <img
+            src="/assets/images/vector_header.svg"
+            alt="vector_header"
+          />
+          <div id="sub-menu-container" class="text-neutral-400 font-semibold   flex flex-col gap-3 hidden lg:hidden">
+            <a href="#" class="flex flex-col gap-2 hover:text-white w-fit">
+              <div class="flex gap-2 items-center">
+                <img src="./assets/images/rive.app_.png" alt="icon" class="w-fit">
+                <h4>Editor</h4>
+
+              </div>
+              <p class="font-thin text-sm">
+                Design and animate in an editor built for interactivity
+              </p>
+            </a>
+          </div>
+        </div>
+          
+            
           </a>
           <a
             href="#"
