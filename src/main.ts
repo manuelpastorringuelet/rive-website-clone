@@ -1,31 +1,9 @@
 import "./style.css";
 
-const x = document.getElementById("menu-container")!;
+const menuContainer = document.getElementById(
+  "menu-container"
+) as HTMLDivElement;
 
-function myFunction() {
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
-  console.log("hi");
-}
+const x = document.getElementById("button-hidden-menu") as HTMLAnchorElement;
 
-x.addEventListener("click", myFunction);
-
-/* const x = document.getElementById("menu-container")!;
-
-function myFunction() {
-  document.querySelector("html")?.classList.toggle("flex");
-  console.log("hi");
-}
-
-x.onclick = myFunction; */
-
-/* const themeTogglerRef = document.getElementById("theme-toggler")!;
-
-function handleClick() {
-  document.querySelector("html")?.classList.toggle("dark");
-}
-
-themeTogglerRef.onclick = handleClick; */
+x.addEventListener("click", () => menuContainer.classList.toggle("hidden"));
