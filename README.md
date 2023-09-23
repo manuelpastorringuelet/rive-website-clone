@@ -4,7 +4,7 @@
 
 This project is a clone of the [Rive](https://rive.app/) website. It was created using Vite as a build tool and implements HTML, CSS, and Tailwind CSS to replicate the appearance and responsiveness of the original website.
 
-![Rive Website Clone Screenshot](![image](https://github.com/manuelpastorringuelet/rive-website-clone/assets/images/screenshot.png)
+![Rive Website Clone Screenshot](assets/images/screenshot.png)
 )
 
 ## Table of Contents
