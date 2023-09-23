@@ -41,7 +41,7 @@ To run the project locally, use the following command:
   npm run dev
   ```
 
-This will start a development server, and you can access the website in your web browser at http://localhost:3000.
+This will start a development server, and you can access the website in your web browser at http://localhost:5173.
 
 ## Technologies Used
 
